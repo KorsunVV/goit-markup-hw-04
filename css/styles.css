@@ -29,6 +29,7 @@ button {
 
 img {
     height: auto;
+
     /* max-width: 100%; */
 }
 
@@ -165,12 +166,17 @@ img {
     height: 100%;
     display: flex;
     justify-content: center;
+    margin-right: 30px;
 }
 
+.info-icon{
+    margin-right: 10px;
+}
 .info-link:hover .info-icon,
-.info-link:focus .info-icon{
+.info-link:focus .info-icon {
     fill: var(--accent-color);
 }
+
 .hero {
     background-color: var(--foot-color);
     color: var(--bg-nav-color);
@@ -298,9 +304,10 @@ img {
 }
 
 .our-team .flex-element {
-    width: calc((100% - 90px)  4);
+    width: calc((100% - 90px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--bg-nav-color);
 }
 
 .our-team .flex-element:not(:last-child) {
@@ -335,7 +342,9 @@ img {
 }
 
 .our-team .team-social-list {
-    margin: 0 32px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .our-team .team-social-item {
